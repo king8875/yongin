@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./yongin.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__top">
+                <div class="header__top__inner">
+                    <div class="site">
+                        <a href="#" class="site__link">
+                            용인특례시의회
+                        </a>
+                    </div>
+                    <div class="header__top--util">
+                        <div class="weather-area">
+                            <a href="#" class="weather-area__btn">
+                                미세먼지<span class="weather-area__btn--good">좋음</span>
+                                초미세먼지<span class="weather-area__btn--good">좋음</span>
+                            </a>
+                        </div>
+                        <div class="login-area">
+                            <ul class="login-area__list">
+                                <li class="login-area__item">
+                                    <a href="#" title="로그인 화면 이동">로그인</a>
+                                </li>
+                                <li class="login-area__item">
+                                    <a href="#" title="회원가입 화면 이동">회원가입</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="print__btn">
+                            <a href="#" title="프린트하기" class="print__btn__icon">
+                                <span class="blind">프린트하기</span>
+                            </a>
+                        </div>
+                        <div class="magnify">
+                            <ul class="magnify__list">
+                                <li class="magnify__item">
+                                    <a href="#">화면</a>
+                                </li>
+                                <li class="magnify__item">
+                                    <a href="#" class="zoomin">
+                                        <img class="zoomin__img" src="https://www.yongin.go.kr/resources/user/main/img/layout/txt_plus_icon.png" alt="zoomin">
+                                    </a>
+                                </li>
+                                <li class="magnify__item">
+                                    <a href="#" class="zoomout">
+                                        <img class="zoomout__img" src="https://www.yongin.go.kr/resources/user/main/img/layout/txt_minus_icon.png" alt="zoomout">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="language">
+                            <button class="lang__btn">언어선택</button>
+                            <div class="lang__dropdown">
+                                <ul class="lang__list">
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">한국어</a>
+                                    </li>
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">English</a>
+                                    </li>
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">中國語</a>
+                                    </li>
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">日本語</a>
+                                    </li>
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">그 외 언어</a>
+                                    </li>
+                                </ul>
+                                <button class="close"> 언어선택 닫기 </button>
+                            </div>
+                            
+                        </div>
+                        <div class="familyPop__btn">
+                            <div class="familyPop__swiper swiper">
+                                <ul class="familyPop__list swiper-wrapper">
+                                    <li class="familyPop__item swiper-slide">
+                                        <a class="familyPop__item--link" href="#">용인시평생학습관</a>
+                                    </li>
+                                    <li class="familyPop__item swiper-slide">
+                                        <a class="familyPop__item--link" href="#">용인시평생학습관</a>
+                                    </li>
+                                    <li class="familyPop__item swiper-slide">
+                                        <a class="familyPop__item--link" href="#">용인시평생학습관</a>
+                                    </li>
+                                    <li class="familyPop__item swiper-slide">
+                                        <a class="familyPop__item--link" href="#">용인시평생학습관</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="more__btn">
+                                <a class="more__btn__link" href="#">더보기</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__main">
+                <div class="header__logo">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <h1 class="blind">용인시청 로고</h1>
+                            <img class="logo__img" src="./assets/img/header_logo_img.jpg" alt="용인특례시 로고 이미지">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item" data-tab="tab01">
+                            <a class="header__item__link" href="#">용인소식</a>
+                            <div id="tab01" class="tab__item">
+                                <div class="tab__item__inner">
+                                    fewfewfew
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab02">
+                            <a class="header__item__link" href="#">민원안내</a>
+                            <div id="tab02" class="tab__item">
+                                tewtewt
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab03">
+                            <a class="header__item__link" href="#">정보공개</a>
+                            <div id="tab03" class="tab__item">
+                                tewtewt
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab04">
+                            <a class="header__item__link" href="#">시민참여</a>
+                            <div id="tab04" class="tab__item">
+                                tewtewt
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab05">
+                            <a class="header__item__link" href="#">용인소개</a>
+                            <div id="tab05" class="tab__item">
+                                tewtewt
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab06">
+                            <a class="header__item__link" href="#">분야별정보</a>
+                            <div id="tab06" class="tab__item">
+                                tewtewt
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__form">
+                        <button class="search__icon">
+                            <span class="blind">검색 아이콘</span>
+                        </button>
+                        <button class="menu__icon">
+                            <span class="blind">매뉴 아이콘</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+
+    </header>
+
+
+    
+
+    <main>
+        <div class="container">
+
+            <section class="sec-main">
+
+                <div class="main__inner">
+
+                    <div class="contentSearch-group">
+                        <span class="blind">검색창</span>
+                        <div class="yongin-banner">
+                            <div class="front-card">
+                                <a class="yongin-banner-link" href="#">
+                                    <img src="./assets/img/logo_img.png" alt="용인시 배너">
+                                </a>
+                            </div>
+                            <div class="back-card">
+                                <a class="yongin-banner-link" href="#">
+                                    <h5>용인르네상스 의미</h5>
+                                    <p>
+                                        시민과 함께 지혜를 모아 시의 발전과<br>
+                                        모든 분야의 질적 변화와 양적 성장을<br> 통해
+                                        시민 삶의 질을 업그레이드하겠다는<br>
+                                        미래 비전입니다
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-left-block">
+                                <form class="search-form" method="">
+                                    <span class="blind">검색창</span>
+                                    <input class="search-input" placeholder="검색어를 입력해주세요"></input>
+                                    <button class="btn-search">
+                                        <img src="/assets/icon/search-ic.png" alt="검색아이콘">
+                                    </button>
+                                </form>
+                                <div class="hottag-block">
+                                    <div class="hot-keyword">
+                                        <h3>인기검색어</h3>
+                                    </div>
+                                    <ul class="hottag-list">
+                                        <li class="hottag-item">폐기물</li>
+                                        <li class="hottag-item">교류</li>
+                                        <li class="hottag-item">대형폐기물</li>
+                                        <li class="hottag-item">지구단위계획</li>
+                                        <li class="hottag-item">폐가전</li>
+                                        <li class="hottag-item">민간임대</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="chatbot-area">
+                                <a href="#">
+                                    <img src="/assets/img/chatbot_img.png" alt="실시간 챗봇 이미지">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contentBanner-group">
+
+                        <div class="swiper-area">
+                            <nav class="swiper-tab-block">
+                                <div class="visual-tab on" id="tab01">
+                                    <h3>주요소식</h3>
+                                </div>
+                                <div class="visual-tab" id="tab02">
+                                    <h3>시민참여</h3>
+                                </div>
+                            </nav>
+                            <div class="visual-swiper swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="/assets/img/swiper_img01.png" alt="">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="/assets/img/swiper_img01.png" alt="">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="/assets/img/swiper_img01.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-ctrl-block">
+                                <div class="swiper-pagination"></div>
+                                <div class="visual-btn prev swiper-button-prev">
+                                    <span class="blind">prev</span>
+                                    <img src="/assets/icon/prev_btn-ic.png" alt="이전">
+                                </div>
+                                <div class="visual-btn next swiper-button-next">
+                                    <span class="blind">next</span>
+                                    <img src="/assets/icon/prev_btn-ic.png" alt="다음">
+                                </div>
+                                <button class="swiper-play-pause"><span class="blind">Pause</span></button>
+                                <button class="visual-btn btn-tooltip">
+                                    <span class="blind">tooltip</span>
+                                    <img src="/assets/icon/tooltip_ic.png" alt="tooltip-ic">
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="mayor-area">
+
+                            <div class="mayor-top-block">
+                                <ul class="mayor-top-list">
+                                    <li class="mayor-top-item">
+                                        <a href="#"> <i class="ico ic-organ"></i>조직도</a>
+                                    </li>
+                                    <li class="mayor-top-item">
+                                        <a href="#"><i class="ico ico-office"></i>청사안내</a>
+                                    </li>
+                                    <li class="mayor-top-item">
+                                        <a href="#"><i class="ico ico-live"></i>용인라이브</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="mayor-mid-block">
+                                <img src="/assets/img/mayor_img.jpg" alt>
+                                <h3 class="section-title">
+                                    <span>용인특례시장</span>
+                                    <span><strong>이상일</strong>입니다.</span>
+                                </h3>
+                                <span class="mayor-mid-subtitle">
+                                    용인특례시를
+                                    <br>
+                                    세계 최고의 반도체 혁신 클러스터로
+                                </span>
+                            </div>
+
+                            <div class="mayor-bot-block">
+                                <ul class="mayor-bot-list">
+                                    <li class="mayor-bot-item">
+                                        <a href="#">시민시장실</a>
+                                    </li>
+                                    <li class="mayor-bot-item">
+                                        <a href="#">공약과 실천</a>
+                                    </li>
+                                    <li class="mayor-bot-item">
+                                        <a href="#">시민참여플랫폼</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="sec-service">
+                <div class="service-inner">
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img01.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">공공체육통합예약</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img02.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">통합일자리</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img03.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">채용/시험정보</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img04.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">생활폐기물</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img05.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">통합예약</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img06.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">용인관광</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img07.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">복지(생애주기별 서비스)</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img08.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">문화·예술</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img09.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">빅데이터 플랫폼</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img10.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">용인기업지원시스템</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img11.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">청년LAB</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img12.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">복지용구 공유 플랫폼</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img13.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">용인 온마켓</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img14.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">공간정보 포털</h3>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="ai-area">
+                        <div class="ai-inner">
+                            <h3 class="ai-title-block">
+                                용인특례시<br>
+                                AI 맞춤서비스
+                            </h3>
+
+                            <div class="ai-mygroup-block">
+                                <div class="ai-mygroup-content">
+                                    <div class="ai-group-title">
+                                        <h3><span class="blue">나의</span> 관심정보</h3>
+                                    </div>
+                                    <ul class="ai-tag-list">
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">실시간 채용정보</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">채용/시험정보</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ai-mygroup-content">
+                                    <div class="ai-group-title">
+                                        <h3><span class="blue">나의</span> 관심정보</h3>
+                                    </div>
+                                    <ul class="ai-tag-list">
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">실시간 채용정보</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">채용/시험정보</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="news-area">
+                        <div class="news-inner">
+                            <div class="news-title-block">
+                                <h2 class="news-title-tx">용인특례시 <strong>소식</strong></h2>
+                            </div>
+                            <div class="news-tab-list-block">
+                                <ul class="news-tab-list">
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link on" href="#tab1">
+                                            <p class="news-tab-item-tx">시정소식</p>
+                                        </a>
+                                    </li>
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link" href="#tab2">
+                                            <p class="news-tab-item-tx">채용/시험정보</p>
+                                        </a>
+                                    </li>
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link" href="#tab3">
+                                            <p class="news-tab-item-tx">입찰공고</p>
+                                        </a>
+                                    </li>
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link" href="#tab4">
+                                            <p class="news-tab-item-tx">고시/공고</p>
+                                        </a>
+                                    </li>
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link" href="#tab5">
+                                            <p class="news-tab-item-tx">e-book 전자책</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="news-tab-content">
+                                <div id="tab1" class="news-tab-pane">
+                                    <div class="news-tab-pane-inner">
+                                        <div class="tab-pane-top">
+                                            <p>더보기</p>
+                                        </div>
+                                        <ul class="tab-pane-mid-list">
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> (병원) 동절기 대비 화재안전점검 매뉴얼 등 게시</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title">12월 심폐소생술 등 응급처치교육 신청 안내(기초 과정)</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">14</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> (모의훈련)초미세먼지 위기경보 ‘주의’단계 발령 및 비상저감</h3>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="news-tab-pane">
+                                    <div class="news-tab-pane-inner">
+                                        <div class="tab-pane-top">
+                                            <p>더보기</p>
+                                        </div>
+                                        <ul class="tab-pane-mid-list">
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="news-tab-pane">
+                                    <div class="news-tab-pane-inner">
+                                        <div class="tab-pane-top">
+                                            <p>더보기</p>
+                                        </div>
+                                        <ul class="tab-pane-mid-list">
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="sec-admin"></section>
+            
+      
+
+
+
+
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <footer></footer>
+
+</body>
+
+</html>
