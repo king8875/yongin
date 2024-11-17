@@ -76,3 +76,21 @@ $('.news-tab-item-link').on('click',function(e){
     $('.news-tab-pane').removeClass('active');
     $(target).addClass('active');
 });
+
+
+// visual swiper js
+const AdminSwiper = new Swiper('.admin-tab-swiper.swiper',{
+    slidesPerView: 7,
+    // spaceBetween : 15,
+    navigation: {
+        nextEl: '.admin-tab-swiper .next',
+        prevEl: '.admin-tab-swiper .prev',
+    },
+});
+
+$('.admin-tab-item').on("click",function(e){
+    e.preventDefault();
+
+    $('.admin-tab-item').removeClass('active');
+    $(this).addClass('active');
+});
