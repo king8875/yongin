@@ -11,6 +11,5 @@
 .swiper-button-next::after
 { display: none; }
 
-.blue{
-    color: #2672d8;
-}
+.blue{ color: #2672d8; };
+.red{ color: #bd445d;}
