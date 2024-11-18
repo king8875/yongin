@@ -4,9 +4,10 @@
 
 /* header css */
 .header{
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;left: 0;
-    z-index: 900;
+    z-index: 1000;
     background: #fff;
 }
 .header__inner{ border: 1px solid #e5e5e5; }
@@ -16,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .site{
@@ -273,9 +274,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 1400px;
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
+}
+.header__logo{
+
+    /* width: 200px;
+    background: #f00; */
 }
 .header__nav{
     display: flex;
@@ -587,4 +592,19 @@
     border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
     transform: rotate(-45deg);
+}
+
+
+
+@media (max-width:970px) {
+    .header__top--util{
+        display: none;
+    }
+    .header__list{
+        display: none;
+    }
+    .header__logo{
+        width: 150px;
+        padding-left: 30px;
+    }
 }

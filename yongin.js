@@ -8,9 +8,8 @@ gsap.ticker.lagSmoothing(0);
 
 
 $(document).ready(function(){
-
+    // 화면 줌, 줌아웃
     let scale = 1; 
-
     $('.zoomin').on('click', function () {
         scale += 0.1; 
         $('.container').css({
@@ -26,35 +25,29 @@ $(document).ready(function(){
         });
     });
 
-
-
+    // side 메인 소식 행정 스크롤 
     $('#admin').click(function(e){
         e.preventDefault();
-
         gsap.to(window, {
             duration: 0.7,
             scrollTo: { y: "#footer" },
         });
     });
-   
     $('#news').click(function(e){
         e.preventDefault();
-
         gsap.to(window, {
             duration: 0.7,
             scrollTo: { y: "#news-tab" },
         });
     });
 
+    //header 스와이퍼 기능
     const FamilyPopSwiper = new Swiper('.familyPop__swiper.swiper',{
-        direction: 'vertical',
         slidesPerView: 1,
         loop:true,  
-        autoplay:{
-            delay:2000,
-        },
+        autoplay:{ delay:2000, },
     });
-    
+    // header 언어 드롭다운
     $('.lang__btn').click(function(){
         $('.lang__dropdown').addClass('active');
     });
@@ -62,8 +55,9 @@ $(document).ready(function(){
         $('.lang__dropdown').removeClass('active');
     });
 
-
+    // header navi js
     $('.header__item').hover(function(){
+        $('.dimmed').addClass('active');
         $('.header__item').removeClass('active');
         $(this).addClass('active');
         $('.tab__item').removeClass('active');
@@ -71,6 +65,7 @@ $(document).ready(function(){
         $('#' + tabId).addClass('active');
     });
     $('.header__list, .tab__item').mouseleave(function() {
+        $('.dimmed').removeClass('active');
         $('.header__list').removeClass('active');
         $('.tab__item').removeClass('active');
     });
@@ -117,6 +112,26 @@ $(document).ready(function(){
         $('.news-tab-pane').removeClass('active');
         $(target).addClass('active');
     });
+
+    const News01Swiper = new Swiper('.news01-content.swiper',{
+        loop:true,
+        slidesPerView: 5,
+        
+        navigation: {
+            nextEl: '.news01-content .next',
+            prevEl: '.news01-content .prev',
+        },
+       
+    });
+
+
+
+
+
+
+
+
+
     
     
     const AdminSwiper = new Swiper('.admin-tab-swiper.swiper',{
@@ -138,7 +153,7 @@ $(document).ready(function(){
 
         $('.side-navi-item').removeClass('on');
         $(this).addClass('on');
-    })
+    });
 });
 
 
