@@ -121,6 +121,15 @@ $(document).ready(function(){
             nextEl: '.news01-content .next',
             prevEl: '.news01-content .prev',
         },
+
+        breakpoints:{
+            970: {
+                slidesPerView:3
+            },
+            580:{
+                slidesPerView:1
+            }
+        }
        
     });
 
