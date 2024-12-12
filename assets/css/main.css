@@ -240,7 +240,7 @@
 .ic-organ{
     width: 33px;
     height: 33px;
-    background: url("/assets/icon/mayor-top-item01.png");
+    background: url("../icon/mayor-top-item01.png");
     margin-right: 10px;
     background-position: center center;  
     background-size: cover;          
