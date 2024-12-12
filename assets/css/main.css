@@ -111,9 +111,7 @@
     font-size: 14px;
 }
 .hottag-block .hottag-list .hottag-item::before{ content: "#"; margin-right: 2px; }
-.chatbot-area{
-    margin-left: 60px;
-}
+.chatbot-area{ margin-left: 60px; }
 
 /* contentbanner css */
 
@@ -490,18 +488,14 @@
     gap: 10px;
     margin-top: 20px;
 }
-.ai-tag-list .ai-tag-item{
-    margin-top: 20px;
-}
+.ai-tag-list .ai-tag-item{ margin-top: 20px; }
 .ai-tag-list .ai-tag-item .ai-tag-item-link{
     background: transparent;
     border: 1px dashed #dedede;
     border-radius: 20px;
     padding: 8px 13px;
 }
-.ai-tag-list .ai-tag-item .ai-tag-item-link:hover{
-    color: #c0314c;
-}
+.ai-tag-list .ai-tag-item .ai-tag-item-link:hover{ color: #c0314c; }
 
 
 /* news-area css */
@@ -519,7 +513,6 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 80px 0;
-
 }
 .news-title-block{
     display: flex;
@@ -533,15 +526,12 @@
     font-weight: 500;
     font-size: 36px;
 }
-.news-tab-list-block{
-}
 .news-tab-list-block .news-tab-list{
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin-top: 30px;
 }
-.news-tab-list-block .news-tab-list .news-tab-item{ }
 .news-tab-item .news-tab-item-link{
     position: relative;
     display: flex;
@@ -571,24 +561,14 @@
     background: url("https://www.yongin.go.kr/resources/user_renewal/www/images/home/btn-more.png") center / contain no-repeat;
     opacity: 0;
 }
-.news-tab-item .news-tab-item-link.on::after{
-    opacity: 1;
-}
+.news-tab-item .news-tab-item-link.on::after{ opacity: 1; }
 .news-tab-item .news-tab-item-link:hover{
     color: #fff;
     background: #c3324d;
     box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2);
 
 }
-
-.news-tab-item a .news-tab-item-tx{
-    font-size: 22px;
-}
-
-
-
-
-
+.news-tab-item a .news-tab-item-tx{ font-size: 22px; }
 .news-tab-pane{ display: none; }
 .news-tab-pane.active{ display: block; }
 .news-tab-content{
@@ -623,7 +603,6 @@
     height: 10px;
     background: url("https://www.yongin.go.kr/resources/user_renewal/www/images/home/btn-more.png") center / contain no-repeat;
 }
-
 .tab-pane-mid-list{
     display: flex;
     flex-direction: column;
@@ -657,12 +636,10 @@
     line-height: 1.25;
     font-weight: 600;
 }
-.pane-date-block .pane-date{ }
 .pane-date-block .num{
     font-size: 36px;
     font-weight: bold;
 }
-.tab-pane-mid-link .pane-title{ }
 
 
 
@@ -697,7 +674,6 @@
     height: 10px;
     background: url("https://www.yongin.go.kr/resources/user_renewal/www/images/home/btn-more.png") center / contain no-repeat;
 }
-
 .news01-content{
     width: 100%;
     padding-bottom: 30px;
@@ -708,7 +684,6 @@
     justify-content: space-between;
     gap: 20px;
 }
-/* .news01-content .news01-list .news01-item{ flex: 1; } */
 .news01-item .news01-item-link{
     display: flex;
     flex-direction: column;
@@ -740,11 +715,9 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.news01-item .news01-item-link .news01-item-date{}
 
 
 /* admin section css */
-
 .sec-admin{
     position: relative;
     width: 100%;
@@ -762,11 +735,8 @@
     width: 1400px;
     margin: 0 auto;
 }
-.admin-inner .admin-content{}
 
-.admin-tab-block{
-    width: 100%;
-}
+.admin-tab-block{ width: 100%; }
 .admin-tab-block .admin-tab-list{
     display: flex;
     justify-content: space-between;
@@ -779,9 +749,7 @@
     width: 100%;
     height: 50px;
 }
-.admin-tab-item.active{
-    background: #c3324d;
-}
+.admin-tab-item.active{ background: #c3324d; }
 .admin-tab-block .admin-tab-item a{
     display: flex;
     align-items: center;
@@ -790,16 +758,12 @@
     height: 100%;
     color: #fff;
 }
-.admin-tab-block .admin-tab-item a:hover{
-
-}
 .admin-tab-swiper{
     width: 100%;
     margin-top: 50px;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.6);    
     padding: 0 40px;
-    
 }
 .admin-tab-swiper .swiper-wrapper{
     display: flex;
@@ -811,7 +775,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .admin-tab-link{
     display: flex;
     align-items: center;
@@ -821,16 +784,13 @@
     width: 130px;
     height: 130px;
 }
-.admin-tab-link img{
-    max-width: 47%;
-}
+.admin-tab-link img{ max-width: 47%; }
 .admin-tab-link-tx{
     color: #fff;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
 }
-
 .admin-tab-swiper .btn{
     position: absolute;
     top: 20px;
@@ -848,9 +808,6 @@
     right: 0;
     background: url("https://www.yongin.go.kr/resources/user_renewal/www/images/home/ico_swiper_right.png") center/15px 27px no-repeat;
 }
-
-
-
 .admin-sns-block{
     margin-top: 50px;
     width: 100%;
@@ -871,26 +828,11 @@
     font-weight: normal;
     color: #fff;
 }
-.admin-sns-block .admin-sns-content .sns-icon-list{
-    display: flex;
-    gap: 10px;
-}
-.admin-sns-block .admin-sns-content .sns-icon-item{}
-.admin-sns-block .admin-sns-content .sns-icon-item a{}
-.admin-sns-block .admin-sns-content .sns-icon-item a img{
-    width: 40px;
-    height: 40px;
-}
+.admin-sns-block .admin-sns-content .sns-icon-list{ display: flex; gap: 10px; }
+.admin-sns-block .admin-sns-content .sns-icon-item a img{ width: 40px; height: 40px; }
 
-
-
-.footer{
-    position: relative;
-}
-.footer-inner{
-}
+.footer{ position: relative; }
 .familysite-block{
-   
     height: 60px;
     background-color: #383f4c;
 }
@@ -930,8 +872,6 @@
     background: url("https://www.yongin.go.kr/resources/user/main/img/layout/familysite_open.png") no-repeat;
     background-position: 93% center;
 }
-
-
 .footer-block{
     position: relative;
     background: #fff;
@@ -948,10 +888,7 @@
     flex-direction: column;
     gap: 10px;
 }
-.footer-content .footer-item{
-    display: flex;
-    gap: 30px;
-}
+.footer-content .footer-item{ display: flex; gap: 30px; }
 .footer-content .footer-item .call-num{
     background: url("https://www.yongin.go.kr/resources/user/main/img/layout/callcenter_icon.png") no-repeat;
     background-size: 25px 23px;
@@ -964,7 +901,6 @@
     font-size: 24px;
     font-weight: bold;
 }
-
 .footer-content .footer-item .call-num02{
     display: flex;
     align-items: center;
@@ -974,10 +910,7 @@
     background-position: left center;
 
 }
-.footer-content .footer-item .footer-menu-list{
-    display: flex;
-}
-.footer-content .footer-item .footer-menu-item{}
+.footer-content .footer-item .footer-menu-list{ display: flex; }
 .footer-content .footer-item .footer-menu-item::after{
     content: "";
     display: inline-block;
@@ -988,54 +921,27 @@
     background-color: #c4c6ca;
     vertical-align: middle;
 }
-.footer-content .footer-item address{}
-
 .footer-content .footer-right{
     display: flex;
     gap: 10px;
     height: 60px;
 }
-.footer-content .footer-right img{}
-
-
-
-
-
 
 /* mobile view */
 @media (max-width:1440px) {
-    .side-block{
-        display: none;
-    }
-    
+    .side-block{ display: none; }
 }
 @media (max-width:1400px) {
-    .contentBanner-group{
-        flex-direction: column;
-    }
-    .service-list{
-        grid-template-columns: repeat(4,1fr);
-    }
-    
+    .contentBanner-group{ flex-direction: column; }
+    .service-list{ grid-template-columns: repeat(4,1fr); }
 }
 @media (max-width:970px) {
-    .contentSearch-group .yongin-banner{
-        display: none;
-    }  
-    .chatbot-area{
-        display: none;
-    }
-    .ai-area{
-        display: none;
-    }
+    .contentSearch-group .yongin-banner{ display: none; }  
+    .chatbot-area{ display: none; }
+    .ai-area{ display: none; }
 }
-
 @media (max-width:580px) {
-    .hottag-block{
-        display: none;
-    }
-    .service-list{
-        grid-template-columns: repeat(2,1fr);
-    }
+    .hottag-block{ display: none; }
+    .service-list{ grid-template-columns: repeat(2,1fr); }
 }
 
