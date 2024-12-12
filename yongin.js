@@ -133,16 +133,6 @@ $(document).ready(function(){
        
     });
 
-
-
-
-
-
-
-
-
-    
-    
     const AdminSwiper = new Swiper('.admin-tab-swiper.swiper',{
         slidesPerView: 7,
         navigation: {
