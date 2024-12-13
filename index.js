@@ -102,6 +102,19 @@ $(document).ready(function(){
     });
 
 
+    new Swiper('#tab1.swiper',{
+        loop:true,
+        slidesPerView: 4,
+
+    });
+    new Swiper('#tab2.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+    });
     $('.news-tab-item-link').on('click',function(e){
         e.preventDefault(); 
     

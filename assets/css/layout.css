@@ -5,7 +5,7 @@
 /* header css */
 .header{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;left: 0;
     z-index: 1000;
     background: #fff;
@@ -597,4 +597,8 @@
         width: 150px;
         padding-left: 30px;
     }
+}
+
+@media (max-width:768px) {
+
 }
