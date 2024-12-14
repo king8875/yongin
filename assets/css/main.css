@@ -325,9 +325,7 @@
     justify-content: center;
     flex: 1;
     height: 50px;
-
 }
-.mayor-bot-block .mayor-bot-item a{}
 .mayor-bot-block .mayor-bot-item a::before{
     content: '';
     display: inline-block;
@@ -507,11 +505,10 @@
     padding: 100px 0;
     margin: 100px 0;
     background: var(--red);
-
 }
 .news-area .news-inner{
     max-width: 1400px;
-    padding: 0 10px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .news-tab-content{ 
@@ -642,13 +639,15 @@
 .news-tab-content .news-tab-swiper-btn.prev{ left: 0; }
 
 /* news01-area css */
-.news01-area{ background: #fff; }
+.news01-area{
+    position: relative;
+    width: 100%;
+}
 .news01-area .news01-inner{ 
     max-width: 1400px; 
     margin: 0 auto;
     padding: 0 10px;
 }
-
 .news01-head-block{
     display: flex;
     align-items: center;
@@ -667,15 +666,14 @@
     position: relative;
     padding-right: 40px;
 }
-.news01-head-block p::after{
-    content: '';
-    position: absolute;
-    top: 4px;
-    right: 0;
-    width: 34px;
-    height: 10px;
-    background: url("https://www.yongin.go.kr/resources/user_renewal/www/images/home/btn-more.png") center / contain no-repeat;
+.news01-head-block .btn-more{
+    padding: 10px 15px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+
 }
+
 .news01-content{
     width: 100%;
     padding-bottom: 30px;
@@ -684,7 +682,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
 }
 .news01-item .news01-item-link{
     display: flex;
@@ -700,8 +697,6 @@
 }
 .news01-item .news01-item-link .news01-item-title{
     font-weight: 600;
-    -webkit-box-orient: vertical;
-    white-space: normal;
     max-height: 48px;
     line-height: 24px;
     text-overflow: ellipsis;
@@ -734,7 +729,7 @@
     z-index: -10;
 }
 .admin-inner{
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -833,13 +828,14 @@
 .admin-sns-block .admin-sns-content .sns-icon-list{ display: flex; gap: 10px; }
 .admin-sns-block .admin-sns-content .sns-icon-item a img{ width: 40px; height: 40px; }
 
+/* footer css */
 .footer{ position: relative; }
 .familysite-block{
     height: 60px;
     background-color: #383f4c;
 }
 .footer-inner .familysite-list{
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -877,12 +873,12 @@
 .footer-block{
     position: relative;
     background: #fff;
-    padding: 50px 0;
+    padding: 50px 10px;
 }
 .footer-content{
     display: flex;
     justify-content: space-between;
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .footer-content .footer-list{
@@ -943,12 +939,11 @@
         flex-direction: column;
         gap: 0px;
     }
-    .contentBanner-group{
-        padding: 0 10px;
-    }
     .swiper-area{ max-width: 100%; }
     .contentBanner-group{ flex-direction: column; }
-    
+    .footer-content{
+        flex-direction: column;
+    }
 }
 @media (max-width:970px) {
     .contentSearch-group .yongin-banner{ display: none; }  
@@ -961,12 +956,34 @@
         padding: 0px;
         font-size: 15px;
     }
+    .footer-content .footer-item .call-num span:nth-child(2),
+    .call-num02 strong
+    {
+        font-size: 12px;
+    }
    
 }
 @media (max-width:768px) {
+    .container{ position: relative; margin-top: 100px; }
+
     .hottag-block{ display: none; }
     .service-list{ grid-template-columns: repeat(2,1fr); }
+    .mayor-top-block .mayor-top-list .mayor-top-item{ font-size: 12px; }
+    .swiper-ctrl-block{ height: 30px; }
+    .swiper-ctrl-block .visual-btn { width: 25px; height: 25px; }
+    .swiper-play-pause{ display: none; }
+    .btn-tooltip{ display: none; }
+    .mayor-bot-block .mayor-bot-item{ font-size: 12px; }
 
+    .news-tab-list-block .news-tab-item .news-tab-item-link{ font-size: 12px; }
+    .footer-inner .familysite-item .familysite-item-link h3{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px; 
+    }
+    .footer-inner .familysite-item .familysite-item-link{ padding-left: 0px; }
+    .footer-inner .familysite-item .familysite-item-link h3::after{ display: none; }
     /* news-area css */
 
 }

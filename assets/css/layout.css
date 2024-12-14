@@ -14,9 +14,9 @@
 .header__top{ border-bottom: 1px solid #e5e5e5; }
 .header__top__inner{
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     max-width: 1400px;
     padding: 0 10px;
     margin: 0 auto;
@@ -227,10 +227,10 @@
     z-index: 2;
 }
 .familyPop__btn{
-    width: 200px;
+    width: auto;
     height: 100%;
     font-size: 14px;
-    background: #fff;
+    
 }
 .familyPop__swiper{
     width: 160px;
@@ -241,7 +241,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding-left: 17px;
+    padding-left: 10px;
     color: #fff;
 }
 .more__btn{
