@@ -144,8 +144,8 @@ $(document).ready(function(){
         loop:true,
         spaceBetween:10,
         navigation: {
-            nextEl: '.news01-content .next',
-            prevEl: '.news01-content .prev',
+            nextEl: '.news01-ctrl-btn .next',
+            prevEl: '.news01-ctrl-btn .prev',
         },
 
         breakpoints:{

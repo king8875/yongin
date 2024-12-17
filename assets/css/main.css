@@ -607,9 +607,7 @@
     left: 0;
     width: 16px;
     height: 16px;
-    background-image: url(../icon/news_sp.png);
-    background-repeat: no-repeat;
-    background-position: left top;
+    background: url(../icon/news_sp.png);
     content: '';
 }
 .news-tab-content .news-tab-swiper-btn{
@@ -621,16 +619,11 @@
 .news-tab-content .news-tab-swiper-btn::before{
     display: block;
     position: absolute;
-    top: calc(50% - 9px);
     width: 10px;
     height: 18px;
     margin-left: 0px;
-    background-image: url(../icon/slide-ctl_ic.png);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% 100%;
+    background: url(../icon/slide-ctl_ic.png);
     content: '';
-    transform-origin: 50% 50%;
 }
 .news-tab-content .news-tab-swiper-btn.next{ 
     right: 0px;
@@ -713,7 +706,24 @@
     overflow: hidden;
 }
 
-
+.news01-ctrl-btn{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.news01-swiper-btn{
+    width: 20px;
+    height: 18px;
+    background: url(../icon/slide-ctl_ic.png) no-repeat 50%/50%;
+}
+.news01-swiper-btn.next{
+    right: 230px;
+    transform: rotate(180deg);
+}
+.news01-swiper-btn.prev{
+    left: 230px;
+}
 /* admin section css */
 .sec-admin{
     position: relative;
