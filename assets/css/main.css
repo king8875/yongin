@@ -40,13 +40,13 @@
     background: #bd445d;
 }
 .contentSearch-group .yongin-banner .back-card::after{
+    background: url(https://www.yongin.go.kr/resources/user/main/img/layout/renaissance_img.png) no-repeat;
     content: "";
     position: absolute;
     bottom: 0;
     right: -32px;
     width: 133px;
     height: 180px;
-    background: url(https://www.yongin.go.kr/resources/user/main/img/layout/renaissance_img.png) no-repeat;
 }
 .back-card h5{ font-size: 18px; font-weight: 700; }
 .back-card p{ line-height: 1.5; font-size: 14px; }
@@ -250,7 +250,7 @@
 .ico-office{
     width: 24px;
     height: 37px;
-    background: url("/assets/icon/mayor-top-item02.png");
+    background: url("../icon/mayor-top-item02.png");
     margin-right: 10px;
     background-position: center center;  
     background-size: cover; 
@@ -258,7 +258,7 @@
 .ico-live{
     width: 31px;
     height: 28px;
-    background: url("/assets/icon/mayor-top-item03.png");
+    background: url("../icon/mayor-top-item03.png");
     margin-right: 10px;
     background-position: center center;  
     background-size: cover; 
@@ -338,13 +338,13 @@
     transform: translateY(-1px);
 }
 .mayor-bot-block .mayor-bot-item:nth-child(1) a::before{
-    background: url("/assets/icon/mayor-bot-item01.png") no-repeat;
+    background: url("../icon/mayor-bot-item01.png") no-repeat;
 }
 .mayor-bot-block .mayor-bot-item:nth-child(2) a::before{
-    background: url("/assets/icon/mayor-bot-item02.png") no-repeat;
+    background: url("../icon/mayor-bot-item02.png") no-repeat;
 }
 .mayor-bot-block .mayor-bot-item:nth-child(3) a::before{
-    background: url("/assets/icon/mayor-bot-item03.png") no-repeat;
+    background: url("../icon/mayor-bot-item03.png") no-repeat;
 }
 .mayor-bot-block .mayor-bot-item a::after{
     content: '';

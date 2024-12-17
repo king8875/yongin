@@ -495,7 +495,7 @@
     margin-left: 5px;
     width: 13px;
     height: 15px;
-    background: url("/assets/icon/reload-ic.png") no-repeat;
+    background: url("../icon/reload-ic.png") no-repeat;
 }
 .side-passport-block li:nth-child(1) .bot{
     display: flex;
@@ -531,7 +531,7 @@
     left: 30px;
     width: 15px;
     height: 23px;
-    background: url("/assets/icon/passport01.png") no-repeat;
+    background: url("../icon/passport01.png") no-repeat;
 }
 .side-right-block .side-passport-block li:nth-child(2)::after{
     content: '';
@@ -540,7 +540,7 @@
     right: 30px;
     width: 15px;
     height: 23px;
-    background: url("/assets/icon/passport01.png") no-repeat;
+    background: url("../icon/passport01.png") no-repeat;
 }
 .side-right-block .side-passport-block li:nth-child(2) h2{
     font-size: 17px;
@@ -600,6 +600,4 @@
     }
 }
 
-@media (max-width:768px) {
-
-}
+@media (max-width:768px) { }
