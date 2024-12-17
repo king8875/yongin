@@ -607,7 +607,7 @@
     left: 0;
     width: 16px;
     height: 16px;
-    background-image: url(/assets/icon/news_sp.png);
+    background-image: url(../icon/news_sp.png);
     background-repeat: no-repeat;
     background-position: left top;
     content: '';
@@ -625,7 +625,7 @@
     width: 10px;
     height: 18px;
     margin-left: 0px;
-    background-image: url(/assets/icon/slide-ctl_ic.png);
+    background-image: url(../icon/slide-ctl_ic.png);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100% 100%;
