@@ -215,7 +215,6 @@
     transform: rotateX(180deg);
 }
 .lang__list{
-    /* display: none; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -227,10 +226,9 @@
     z-index: 2;
 }
 .familyPop__btn{
-    width: auto;
+    position: relative;
     height: 100%;
     font-size: 14px;
-    
 }
 .familyPop__swiper{
     width: 160px;
@@ -246,7 +244,7 @@
 }
 .more__btn{
     position: absolute;
-    top: 0px;right: -30px;
+    top: 0px;right: -20px;
     width: 70px;
     height: 100%;
     z-index: 10;
@@ -452,7 +450,7 @@
     position: fixed;
     top: 50%;right: 0;
     transform: translateY(-50%);
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .side-right-block .side-passport-block{ width: 155px; }
 .side-right-block .side-passport-block li:nth-child(1){

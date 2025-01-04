@@ -168,6 +168,17 @@ $(document).ready(function(){
             nextEl: '.admin-tab-swiper .next',
             prevEl: '.admin-tab-swiper .prev',
         },
+        breakpoints:{
+            1200: {
+                slidesPerView:7
+            },
+            768:{
+                slidesPerView:5
+            },
+            0:{
+                slidesPerView:3
+            }
+        }
     });
     
     $('.admin-tab-item').on("click",function(e){
