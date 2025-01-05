@@ -1,10 +1,13 @@
-.container{ position: relative; margin-top: 140px; }
+.container{ 
+    position: relative;
+    margin-top: 140px;
+    width: 100%;
+}
 
 /* sec-main */
 .sec-main{ background: #ededed; }
 .main__inner{
     max-width: 1400px;
-    /* width: 1400px; */
     margin: 0px auto;
     padding: 10px;
 }
@@ -114,7 +117,6 @@
     color: #333;
     font-size: 14px;
 }
-
 .hottag-block .hottag-list .hottag-item::before{ 
     content: "#"; 
     margin-right: 2px; 
@@ -122,7 +124,6 @@
 }
 
 /* contentbanner css */
-
 .contentBanner-group{
     display: flex;
     justify-content: space-between;
@@ -207,7 +208,7 @@
 }
 .btn-tooltip img{ width: 25px; margin-left: 6px; }
 
-
+/* mayor area */
 .mayor-area{
     position: relative;
     display: flex;
@@ -292,7 +293,6 @@
     color: #fff;
     font-family: "GmarketSans";
 }
-.mayor-mid-block .section-title span{}
 .mayor-mid-block .section-title strong{
     font-size: 32px;
     font-weight: 400;
@@ -344,15 +344,9 @@
     background-size: 100%;
     transform: translateY(-1px);
 }
-.mayor-bot-block .mayor-bot-item:nth-child(1) a::before{
-    background: url("../icon/mayor-bot-item01.png") no-repeat;
-}
-.mayor-bot-block .mayor-bot-item:nth-child(2) a::before{
-    background: url("../icon/mayor-bot-item02.png") no-repeat;
-}
-.mayor-bot-block .mayor-bot-item:nth-child(3) a::before{
-    background: url("../icon/mayor-bot-item03.png") no-repeat;
-}
+.mayor-bot-block .mayor-bot-item:nth-child(1) a::before{ background: url("../icon/mayor-bot-item01.png") no-repeat; }
+.mayor-bot-block .mayor-bot-item:nth-child(2) a::before{ background: url("../icon/mayor-bot-item02.png") no-repeat; }
+.mayor-bot-block .mayor-bot-item:nth-child(3) a::before{ background: url("../icon/mayor-bot-item03.png") no-repeat; }
 .mayor-bot-block .mayor-bot-item a::after{
     content: '';
     position: absolute;
@@ -364,7 +358,7 @@
     transform: translateY(-50%);
 }
 
-
+/* service sec */
 .sec-service{
     position: relative;
     width: 100%;
@@ -377,7 +371,6 @@
     flex-direction: column;
     margin: 80px auto;
 }
-
 .service-list{
     display: grid;
     grid-template-columns: repeat(7,1fr);
@@ -412,9 +405,7 @@
     padding: 10px;
     transition: background-color .3s;
 }
-.service-item-link .service-icon-block img{
-   max-width: 65%;
-}
+.service-item-link .service-icon-block img{ max-width: 65%; }
 .service-item-link .service-text{
     margin-top: 7px;
     font-size: 16px;
@@ -425,7 +416,6 @@
     word-break: keep-all;
     vertical-align: top;
 }
-
 .ai-area{
     position: relative;
     max-width: 1400px;
@@ -458,16 +448,12 @@
     margin-left: 85px;
     padding: 25px 70px 25px 110px;
 }
-.ai-mygroup-block .ai-mygroup-content{
-    width: 50%;
-}
+.ai-mygroup-block .ai-mygroup-content{ width: 50%; }
 .ai-mygroup-block .ai-mygroup-content:nth-child(1){
     padding-left: 60px;
     border-right: 1px solid #dedede;
 }
-.ai-mygroup-block .ai-mygroup-content:nth-child(2){
-    padding-left: 60px;
-}
+.ai-mygroup-block .ai-mygroup-content:nth-child(2){ padding-left: 60px; }
 .ai-mygroup-block .ai-mygroup-content .ai-group-title{
     display: flex;
     align-items: center;
@@ -486,8 +472,6 @@
     width: 26px;
     height: 22px;
 }
-.ai-group-title img{}
-
 .ai-tag-list{
     display: flex;
     flex-flow: wrap;
@@ -503,9 +487,7 @@
 }
 .ai-tag-list .ai-tag-item .ai-tag-item-link:hover{ color: #c0314c; }
 
-
 /* news-area css */
-
 .news-area{
     position: relative;
     width: 100%;
@@ -534,7 +516,6 @@
 }
 .news-tab-content .news-tab-pane{ display: none; }
 .news-tab-content .news-tab-pane.active{ display: block; }
-
 .news-tab-list-block .news-tab-list{
     display: flex;
     gap: 10px;
@@ -578,9 +559,7 @@
     font-weight: 700;
     color: var(--red);
 }
-.news-tab-pane-slide-link:hover strong{
-    color: var(--red);
-}
+.news-tab-pane-slide-link:hover strong{ color: var(--red); }
 .news-tab-pane-slide-link strong {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -673,7 +652,6 @@
     color: var(--white);
     border-radius: 10px;
 }
-
 .news01-content{
     position: relative;
     width: 100%;
@@ -713,7 +691,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
 .news01-swiper-btn{
     width: 20px;
     height: 18px;
@@ -743,7 +720,6 @@
     max-width: 1400px;
     margin: 0 auto;
 }
-
 .admin-tab-block{ width: 100%; }
 .admin-tab-block .admin-tab-list{
     display: flex;
@@ -815,9 +791,7 @@
     right: 0;
     background: url("https://www.yongin.go.kr/resources/user_renewal/www/images/home/ico_swiper_right.png") center/15px 27px no-repeat;
 }
-.admin-sns-block{
-    margin-top: 50px;
-}
+.admin-sns-block{ margin-top: 50px; }
 .admin-sns-block .admin-sns-content{
     display: flex;
     align-items: center;
@@ -914,7 +888,6 @@
     background-size: 25px 23px;
     padding-left: 30px;
     background-position: left center;
-
 }
 .footer-content .footer-item .footer-menu-list{ display: flex; }
 .footer-content .footer-item .footer-menu-item::after{
@@ -960,7 +933,7 @@
     .news-tab-list-block .news-tab-list{ gap: 10px; }
     .news-tab-list-block .news-tab-item .news-tab-item-link{
         border: none;
-        padding: 0px;
+        padding: 5px;
         font-size: 15px;
     }
     .footer-content .footer-item .call-num span:nth-child(2),
@@ -968,11 +941,16 @@
     {
         font-size: 12px;
     }
-   
+    .footer-content .footer-item .footer-menu-item::after{
+        margin-left: 5px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    .footer-menu-item{ font-size: 12px; }
+    .footer-content .footer-item address{ font-size: 12px; }
 }
 @media (max-width:768px) {
     .container{ position: relative; margin-top: 100px; }
-
     .hottag-block{ display: none; }
     .service-list{ grid-template-columns: repeat(2,1fr); }
     .mayor-top-block .mayor-top-list .mayor-top-item{ font-size: 12px; }
@@ -992,6 +970,37 @@
     .footer-inner .familysite-item .familysite-item-link{ padding-left: 0px; }
     .footer-inner .familysite-item .familysite-item-link h3::after{ display: none; }
     /* news-area css */
-
+    .admin-sns-block .admin-sns-content{
+        flex-direction: column;
+    }
+    .footer-content .footer-item{ display: flex; gap: 5px; }
 }
 
+@media (max-width:500px) {
+    .contentSearch-group .search-block{ padding: 10px; }
+    .mayor-mid-block .section-title{
+        top: 20px;
+        left: 10px;
+        font-size: 18px;
+    }
+    .mayor-mid-subtitle{
+        bottom: 0px;
+        font-size: 16px;
+    }
+    .service-list{
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .news-area .news-inner{ padding: 0 10px; }
+    .news-tab-list-block .news-tab-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap: 0px;
+        text-align: center;
+    }
+    .news01-area .news01-inner{ padding: 0 25px; }
+    /* admin section css */
+    .sec-admin{ padding: 10px 0; }
+    .footer-inner .familysite-item .familysite-item-link h3{ font-size: 11px; }
+}

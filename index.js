@@ -6,7 +6,6 @@ gsap.ticker.add((time) => {
 });
 gsap.ticker.lagSmoothing(0);
 
-
 $(document).ready(function(){
     // 화면 줌, 줌아웃
     let scale = 1; 
@@ -103,7 +102,6 @@ $(document).ready(function(){
 
     //newsarea1 swiper
     const tabs = ['#tab1', '#tab2', '#tab3', '#tab4', '#tab5'];
-
     tabs.forEach((tab) => {
         new Swiper(`${tab}.swiper`, {
             loop: true,
@@ -114,27 +112,17 @@ $(document).ready(function(){
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                1200: {
-                    slidesPerView: 4,
-                },
-                580: {
-                    slidesPerView: 3,
-                },
-                0: {
-                    slidesPerView: 1,
-                },
+                1200: { slidesPerView: 4, },
+                580: { slidesPerView: 3, },
+                0: { slidesPerView: 1, },
             },
         });
     });
-    
-
 
     $('.news-tab-item-link').on('click',function(e){
         e.preventDefault(); 
-    
         $('.news-tab-item-link').removeClass('on');
         $(this).addClass('on');
-    
         const target = $(this).attr('href');
         $('.news-tab-pane').removeClass('active');
         $(target).addClass('active');
@@ -147,19 +135,11 @@ $(document).ready(function(){
             nextEl: '.news01-ctrl-btn .next',
             prevEl: '.news01-ctrl-btn .prev',
         },
-
         breakpoints:{
-            1200: {
-                slidesPerView:3
-            },
-            768:{
-                slidesPerView:2
-            },
-            0:{
-                slidesPerView:1
-            }
+            1200: { slidesPerView:3 },
+            768:{ slidesPerView:2 },
+            0:{ slidesPerView:1 }
         }
-       
     });
 
     const AdminSwiper = new Swiper('.admin-tab-swiper.swiper',{
@@ -169,27 +149,19 @@ $(document).ready(function(){
             prevEl: '.admin-tab-swiper .prev',
         },
         breakpoints:{
-            1200: {
-                slidesPerView:7
-            },
-            768:{
-                slidesPerView:5
-            },
-            0:{
-                slidesPerView:3
-            }
+            1200: { slidesPerView:7 },
+            768:{ slidesPerView:5 },
+            0:{ slidesPerView:3 }
         }
     });
     
     $('.admin-tab-item').on("click",function(e){
         e.preventDefault();
-    
         $('.admin-tab-item').removeClass('active');
         $(this).addClass('active');
     });
     // side js
     $('.side-navi-item').on("click",function(e){
-
         $('.side-navi-item').removeClass('on');
         $(this).addClass('on');
     });
