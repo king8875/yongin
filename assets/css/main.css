@@ -416,77 +416,212 @@
     word-break: keep-all;
     vertical-align: top;
 }
-.ai-area{
+
+/* ca-service */
+.ca-section{
     position: relative;
-    max-width: 1400px;
+     
 }
-.ai-area .ai-inner{
+.ca-inner{
     display: flex;
-    align-items: center;
+    width: 1400px;
+    margin: 0 auto;
+    background: #f7e9e9;
+    overflow: hidden;
+    min-height: 423px;
+    border-radius: 18px;
 }
-.ai-title-block{
-    position: absolute;
-    min-width: 220px;
-    height: 120px;
-    border-radius: 60px;
-    color: #fff;
-    font-size: 24px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 40px;
-    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to right, #a0293f, #c0314c);
+.ca-inner .ca-left{
+    position: relative;
+    width: 310px;
+    min-height: 380px;
+    padding: 38px 0 2px 42px;
+    vertical-align: top;
 }
-.ai-mygroup-block{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #dedede;
+.ca-inner .ca-left .ca-tit{
+    display: block;
+    position: relative;
     width: 100%;
-    border-radius: 200px;
-    margin-left: 85px;
-    padding: 25px 70px 25px 110px;
-}
-.ai-mygroup-block .ai-mygroup-content{ width: 50%; }
-.ai-mygroup-block .ai-mygroup-content:nth-child(1){
-    padding-left: 60px;
-    border-right: 1px solid #dedede;
-}
-.ai-mygroup-block .ai-mygroup-content:nth-child(2){ padding-left: 60px; }
-.ai-mygroup-block .ai-mygroup-content .ai-group-title{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-.ai-mygroup-block .ai-mygroup-content .ai-group-title h3{
-    font-size: 24px;
+    font-size: 36px;
+    color: #333;
+    line-height: 44px;
+    letter-spacing: -0.03em;
     font-weight: 600;
 }
-.ai-mygroup-block .ai-mygroup-content .ai-group-title::before{
-    content: "";
-    display: block;    
-    background: url("/assets/icon/star.png") no-repeat;
-    background-size: contain;
-    width: 26px;
-    height: 22px;
+.ca-inner .ca-left .ca-subtit{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 13px 0 0;
+    font-size: 17px;
+    color: #333;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    font-weight: 400;
 }
-.ai-tag-list{
+.ca-inner .ca-left img{
+    position: absolute;
+    bottom: -20px; left: 100px;
+}
+.ca-inner .ca-right{
     display: flex;
-    flex-flow: wrap;
     gap: 10px;
-    margin-top: 20px;
+    position: relative;
+    width: calc(100% - 310px);
+    min-height: 380px;
+    padding: 2px 2px 2px 0;
+    vertical-align: top;
 }
-.ai-tag-list .ai-tag-item{ margin-top: 20px; }
-.ai-tag-list .ai-tag-item .ai-tag-item-link{
-    background: transparent;
-    border: 1px dashed #dedede;
-    border-radius: 20px;
-    padding: 8px 13px;
+.ca-inner .ca-right .ca-tab-content{}
+.ca-tab-content-list{
 }
-.ai-tag-list .ai-tag-item .ai-tag-item-link:hover{ color: #c0314c; }
+.ca-tab-content-item{
+    display: block;
+    position: absolute;
+    display: none;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 661px;
+    height: 100%;
+    padding: 39px 0 0 42px;
+}
+.ca-tab-content-item.active{
+    display: block;
+}
+.ca-tab-content-item .ca-item-tit{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.ca-tab-content-item .ca-item-tit img{}
+.ca-tab-content-item .ca-item-tit h3{
+    display: inline-block;
+    position: relative;
+    font-size: 36px;
+    color: #333;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    vertical-align: top;
+}
+.ca-tab-content-item .ca-item-menu-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+}
+.ca-tab-content-item .ca-item-menu-item{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    color: #333;
+    transition: all .3s;
+}
+.ca-tab-content-item .ca-item-menu-item:hover{
+    background: #f7e9e9;
+    color: #c1304d;
+}
 
+.ca-tab-content-item .ca-item-menu-item .ca-item-menu-link{
+    display: block;
+    padding: 5px 0 5px 10px;
+}
+
+.ca-tab-content-item .ca-item-menu-item .ca-item-menu-link::after{
+    display: block;
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: calc(50% - 6px);
+    right: 16px;
+    width: 14px;
+    height: 12px;
+    background: url(../img/ca/arrow.png) no-repeat;
+    background-position: left top;
+    opacity: 0;
+}
+.ca-tab-content-item .ca-item-menu-item:hover .ca-item-menu-link::after {
+    opacity: 1; /* hover 시 가시화 */
+}
+.ca-tab-content-item .ca-item-menu-item .ca-item-menu-link em{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding: 0 0 0 9px;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: -0.09em;
+    font-weight: 400;
+    word-break: keep-all;
+}
+.ca-tab-content-item .ca-item-menu-item .ca-item-menu-link em::before{
+    display: block;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0px;
+    width: 2px;
+    height: 2px;
+    background-color: #505050;
+    border-radius: 100%;
+    content: '';
+}
+.ca-tab-btn-block{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 38px 37px 78px 661px;
+    background-color: #fff;
+    border-radius: 18px;
+}
+.ca-tab-btn-inner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.ca-tab-btn-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.ca-tab-btn-inner .ca-tab-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 260px;
+    padding: 114px 0 116px;
+    font-size: 24px;
+    color: #333;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    /* vertical-align: top; */
+    /* transition: font-size 200ms ease; */
+}
+.ca-tab-btn-inner .ca-tab-btn.active{
+    display: none;
+}
+.ca-tab-btn-inner .ca-tab-btn::before{
+    display: block;
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    content: '';
+    z-index: 0;
+    border: 1px solid #ededed;
+}
+.ca-tab-btn-inner .ca-tab-btn img{
+    
+}
+.ca-tab-btn-inner .ca-tab-btn h3{}
+.ca-tab-btn-inner .ca-tab-btn button{}
 /* news-area css */
 .news-area{
     position: relative;
@@ -935,6 +1070,7 @@
         border: none;
         padding: 5px;
         font-size: 15px;
+
     }
     .footer-content .footer-item .call-num span:nth-child(2),
     .call-num02 strong

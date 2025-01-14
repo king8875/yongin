@@ -165,6 +165,23 @@ $(document).ready(function(){
         $('.side-navi-item').removeClass('on');
         $(this).addClass('on');
     });
+
+
+
+
+    //ca js
+    $('.ca-tab-btn').on('click',function(){
+        const info = $(this).data('info');
+
+        $('.ca-tab-btn').removeClass('active');
+        $('.ca-tab-content-item').removeClass('active');
+
+        $(this).addClass('active');
+        $(`.ca-tab-content-item[data-info="${info}"]`).addClass('active');
+    });
+
+
+
 });
 
 
