@@ -179,6 +179,15 @@ $(document).ready(function(){
         $(this).addClass('active');
         $(`.ca-tab-content-item[data-info="${info}"]`).addClass('active');
     });
+    $('.ca-tab-btn-mob').on('click',function(){
+        const info = $(this).data('info');
+
+        $('.ca-tab-btn-mob').removeClass('active');
+        $('.ca-tab-content-item').removeClass('active');
+
+        $(this).addClass('active');
+        $(`.ca-tab-content-item[data-info="${info}"]`).addClass('active');
+    });
 
 
 

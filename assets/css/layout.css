@@ -276,7 +276,7 @@
     max-width: 1400px;
     margin: 0 auto;
 }
-
+.logo__img{ min-width: 100px; }
 .header__nav{
     display: flex;
     align-items: center;
